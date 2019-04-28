@@ -7,7 +7,11 @@ Run <code>./configure && make</code> - This will also download and build static 
 ## Usage
 
 ### Transcoding
-<code>imgconv [-codec RGB|RGBA|PNG] [-dimension WIDTHxHEIGHT] -input FILE [-codec RGB|RGBA|JPEG|PNG] -output FILE</code>
+<code>imgconv [-codec RGB|RGBA|PNG] [-dimension WIDTHxHEIGHT] -input FILE [-codec RGB|RGBA|JPEG|PNG] [-quality 0..100] -output FILE</code>
+
+-dimension argument is only for data dump formats RGB/RGBA
+
+-quality argument is only for JPEG compression
 
 ### Image information
 <code>imgconv -info [-codec RGB|RGBA|PNG] -input FILE</code>

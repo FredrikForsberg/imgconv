@@ -10,7 +10,7 @@ Run <code>./configure && make</code> - This will also download and build static 
 <code>imgconv [-codec RGB|RGBA|PNG] [-dimension WIDTHxHEIGHT] -input FILE [-codec RGB|RGBA|JPEG|PNG] -output FILE</code>
 
 ### Image information
-<code>imgconv -info [-codec RGB|RGBA|PNG] -input FILE
+<code>imgconv -info [-codec RGB|RGBA|PNG] -input FILE</code>
 
 ## Supported formats
 Currently only supported file formats are JPEG and PNG. Data dump formats are RGB (8+8+8bits) and RGBA (8+8+8+8bits)

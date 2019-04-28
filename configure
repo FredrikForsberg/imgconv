@@ -1,0 +1,15 @@
+#!/bin/bash
+CFG_FILE=scripts/config.inc
+
+# Remove old conf
+rm -rf $CFG_FILE
+
+# Detect archive tool
+if type wget 2>/dev/null 1>/dev/null; then
+    echo "DL=wget -O" >> $CFG_FILE
+elif type curl 2>/dev/null 1>/dev/null; then
+    echo "DL=curl -SsL -o" >> $CFG_FILE
+else
+    echo "No download tool detected! Need 'wget' or 'curl'"
+    exit 1
+fi

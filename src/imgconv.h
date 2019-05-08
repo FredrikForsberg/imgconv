@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include "build.h"
 
+#define uint8_t  unsigned char
+#define uint32_t unsigned int
+
 #define CODEC_INVALID 0
 #define CODEC_AUTO    1
 // File formats

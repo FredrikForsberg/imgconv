@@ -5,7 +5,7 @@ INCLUDES=-I ../libsrc/zlib \
          -I ../libsrc/libpng
 LD=g++
 LDFLAGS=-std=c99 -o
-LIBS=-L../lib -lz -lpng -ljpeg
+LIBS=-L../lib -lpng -ljpeg -lz -lm
 
 TARGETPATH=..
 TARGET=imgconv

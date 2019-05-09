@@ -3,7 +3,7 @@ CFLAGS=-O2 -c
 INCLUDES=-I ../libsrc/zlib \
          -I ../libsrc/libjpeg \
          -I ../libsrc/libpng
-LD=g++
+LD=gcc
 LDFLAGS=-std=c99 -o
 LIBS=-L../lib -lpng -ljpeg -lz -lm
 
